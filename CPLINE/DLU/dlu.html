@@ -123,13 +123,13 @@
             <div class="box">
                 <center><img src="c.png"></center>
                 <h3>Special Case</h3>
-                <p>It may happen that the DL corners are not correctly permuted, however the CP is solved (i.e. tracing gives the sequence 12). Thus, we do not have any corner to place in the UBR position and solve as mentioned. In this case, set up the corner that belongs in DFL an F2 away from being solved (as shown in the figure above), while preserving CP; then do <b>F U F</b> or <b>F' R' F'</b> to solve the DL corners while maintaining CP. [One can also set up an F or F' away and do <b>F U' F U' F'</b> or <b>F' R F' R F</b> respectively.]</p>
+                <p>It may happen that the DL corners are not correctly permuted, however the CP is solved (i.e. tracing gives the sequence 12). Thus, we do not have any corner to place in the UBR position and solve as mentioned. In this case, set up the corner that belongs in DFL an F2 away from being solved (as shown in the figure above), while preserving CP; then do <b>F U F</b> or <b>F' R' F'</b> to solve the DL corners while maintaining CP. [One can also set up an F or F' away and do <b>U F' U' F'</b> or <b>R' F R F</b> respectively.]</p>
             </div>
 
             <div class="box">
                 <center><img src="d.png"></center>
                 <h3>Nightmare Case</h3>
-                <p>If the DFL corner is twisted in place, then simply pick another orientation to solve since these cases are rare and inefficient. However, for an x2 y2 neutral solver, once every ~2000 solves, it may happen that all DL corner pairs are permuted correctly but twisted in place. In such a scenario, one could do normal tracing to get CP, and place a corner swap pair in UFL and DFR while preserving CP, then do one of the following depending on the direction of twist: either <b>F2 R’ F R’ F R’ F</b> or <b>F2 U F’ U F’ U F</b></p>
+                <p>If the DFL corner is twisted in place, then simply pick another orientation to solve since these cases are rare and inefficient. However, for an x2 y2 neutral solver, once every ~2000 solves, it may happen that all DL corner pairs are permuted correctly but twisted in place. In such a scenario, one could do normal tracing to get CP, and place a corner swap pair in UFL and DFR while preserving CP, then do one of the following depending on the direction of twist: <b>F' R F' R F'</b> for clockwise and <b>F U' F U' F </b> for counter-clockwise. Double sexy or antisexy can also be performed (<b>F U F' U' F U F'</b> or <b>F U' F' U F U' F'</b>)</p>
             </div>
         </div>
     </section>
